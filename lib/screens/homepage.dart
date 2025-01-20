@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    NotificationService().initialise();
+    // NotificationService().initialise();
     firsttime = true;
     loadModel();
     count = 0;
@@ -841,16 +841,16 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         head = moist.subText!;
         if (firsttime) {
           print("Moisture: " + head);
-          if (head == "Critically Low Soil Moisture") {
-            NotificationService().instantNotification(
-                head, "Please water the plants with more water", "alert");
-          } else if (head == "Irrigation to Be Applied") {
-            NotificationService()
-                .instantNotification(head, "Please water the plants", "alert");
-          } else if (head == "No Irrigation Required") {
-            NotificationService()
-                .instantNotification(head, "Your crop is healthy", "normal");
-          }
+          // if (head == "Critically Low Soil Moisture") {
+          //   NotificationService().instantNotification(
+          //       head, "Please water the plants with more water", "alert");
+          // } else if (head == "Irrigation to Be Applied") {
+          //   NotificationService()
+          //       .instantNotification(head, "Please water the plants", "alert");
+          // } else if (head == "No Irrigation Required") {
+          //   NotificationService()
+          //       .instantNotification(head, "Your crop is healthy", "normal");
+          // }
           firsttime = false;
         }
       }

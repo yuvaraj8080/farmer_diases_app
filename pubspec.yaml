@@ -48,11 +48,11 @@ dependencies:
   animations:
   timeago:
   carousel_slider:
-  tflite:
   image:
+  tflite:
   image_picker:
   flutter_easyloading:
-  flutter_local_notifications:
+#  flutter_local_notifications:
   flutter_launcher_icons:
 
 dev_dependencies:
