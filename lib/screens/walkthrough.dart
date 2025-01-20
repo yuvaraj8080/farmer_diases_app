@@ -1,7 +1,6 @@
 import 'package:farmer_diases_app/utils/dots_indicator/src/dots_indicator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import '../authentication/signin.dart';
 import '../services/dbdata.dart';
@@ -39,19 +38,19 @@ class _LearnerWalkThroughState extends State<WalkThrough> {
     super.dispose();
   }
 
-  changeStatusColor(Color color) async {
-    try {
-      await FlutterStatusbarcolor.setStatusBarColor(color, animate: true);
-      FlutterStatusbarcolor.setStatusBarWhiteForeground(
-          useWhiteForeground(color));
-    } on Exception catch (e) {
-      print(e);
-    }
-  }
+  // changeStatusColor(Color color) async {
+  //   try {
+  //     await FlutterStatusbarcolor.setStatusBarColor(color, animate: true);
+  //     FlutterStatusbarcolor.setStatusBarWhiteForeground(
+  //         useWhiteForeground(color));
+  //   } on Exception catch (e) {
+  //     print(e);
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
-    changeStatusColor(Color(0xFFF6F7FA));
+    // changeStatusColor(Color(0xFFF6F7FA));
 
     return ModalProgressHUD(
       inAsyncCall: _loading,

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'colors.dart';
 import 'constants.dart';
@@ -65,15 +64,15 @@ Widget text2(var text,
           letterSpacing: latterSpacing));
 }
 
-changeStatusColor(Color color) async {
-  try {
-    await FlutterStatusbarcolor.setStatusBarColor(color, animate: true);
-    FlutterStatusbarcolor.setStatusBarWhiteForeground(
-        useWhiteForeground(color));
-  } on Exception catch (e) {
-    print(e);
-  }
-}
+// changeStatusColor(Color color) async {
+//   try {
+//     await FlutterStatusbarcolor.setStatusBarColor(color, animate: true);
+//     FlutterStatusbarcolor.setStatusBarWhiteForeground(
+//         useWhiteForeground(color));
+//   } on Exception catch (e) {
+//     print(e);
+//   }
+// }
 
 
 BoxDecoration boxDecoration({double radius = 2, Color color = Colors.transparent, Color bgColor = Colors.white, var showShadow = false}) {

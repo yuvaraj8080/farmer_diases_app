@@ -41,7 +41,7 @@ dependencies:
   flutter_speed_dial:
   flutter_signin_button:
   google_sign_in:
-  flutter_statusbarcolor_ns:
+#  flutter_statusbarcolor_ns:
   cached_network_image:
   flutter_svg:
   modal_progress_hud_nsn:

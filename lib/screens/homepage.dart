@@ -439,7 +439,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     var l = MediaQuery.of(context).size.width;
-    changeStatusColor(t5DarkNavy);
+    // changeStatusColor(t5DarkNavy);
     var width = MediaQuery.of(context).size.width - 50;
     final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
     return Scaffold(
