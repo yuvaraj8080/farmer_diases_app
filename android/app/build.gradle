@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.Smart_Farmer"
-    compileSdkVersion 33 // Ensure this is updated based on your project setup
+    compileSdkVersion 34// Ensure this is updated based on your project setup
     ndkVersion = flutter.ndkVersion
 
     defaultConfig {
